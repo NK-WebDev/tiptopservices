@@ -108,7 +108,7 @@ $enable-print-styles:       true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1.125rem !default;
+$spacer: 1rem !default;
 $spacers: (
   0: 0,
   1: ($spacer / 1.618) / 1.618,
@@ -130,7 +130,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   #fff !default;
 $body-color:                $black !default;
 
 // Links
@@ -221,7 +221,7 @@ $font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Libera
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1.125rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.618) !default;
 $font-size-sm:                ($font-size-base / 1.618) !default;
 
