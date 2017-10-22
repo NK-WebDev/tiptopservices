@@ -176,7 +176,7 @@
     margin-bottom: $card-group-margin;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     flex-flow: row wrap;
 
     .card {

@@ -3941,7 +3941,7 @@ tbody.collapse.show {
   margin-bottom: 15px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .card-group {
     flex-flow: row wrap;
   }
@@ -7941,6 +7941,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 .banner {
   background: url(../img/banner-image.jpg) no-repeat center center;
+  background-attachment: fixed;
   background-color: rgba(18, 18, 18, 0.6);
   background-blend-mode: multiply;
   background-size: cover;

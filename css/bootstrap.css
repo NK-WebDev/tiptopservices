@@ -3935,7 +3935,7 @@ tbody.collapse.show {
   margin-bottom: 15px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .card-group {
     flex-flow: row wrap;
   }
