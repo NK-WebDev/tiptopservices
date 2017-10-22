@@ -1,0 +1,28 @@
+.banner
+    background: url(../img/banner-image.jpg) no-repeat center center
+    background-color: rgba(18,18,18,0.6)
+    background-blend-mode: multiply
+    background-size: cover
+    height: 500px
+    width: 100%
+    margin-top: 105px
+
+    .banner-text
+        text-align: center
+        color: $white
+        font-size: $font-size-lg * 2
+        max-width: 800px
+        margin: 0 auto;
+    .btn.btn-success
+        color: $white
+        cursor: pointer
+        max-width: 300px
+        margin: 0 auto;
+
+        &:hover
+            background: $blue
+            border-color: $blue
+
+@media screen and (max-width: 600px)
+    .banner .banner-text
+        font-size: $font-size-lg * 1.5
