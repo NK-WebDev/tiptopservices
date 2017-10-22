@@ -9,7 +9,7 @@
 //
 
 // stylelint-disable
-$white:    #fff !default;
+$white:    #FAFAFE !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -19,7 +19,7 @@ $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #121212 !default;
 
 $grays: () !default;
 $grays: map-merge((
@@ -34,16 +34,16 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #007bff !default;
+$blue:    #0C8DD3 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$green:   #5ADB4F !default;
 $teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$cyan:    #13435B !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -108,14 +108,14 @@ $enable-print-styles:       true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
+$spacer: 1.125rem !default;
 $spacers: (
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
+  1: ($spacer / 1.618) / 1.618,
+  2: ($spacer / 1.618),
   3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3)
+  4: ($spacer * 1.618),
+  5: ($spacer * 1.618) * 1.618
 ) !default;
 
 // This variable affects the `.h-*` and `.w-*` classes.
@@ -131,7 +131,7 @@ $sizes: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $black !default;
 
 // Links
 //
@@ -146,7 +146,7 @@ $link-hover-decoration:     underline !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   1.125rem !default;
 
 
 // Grid breakpoints
@@ -216,14 +216,14 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      "Amiko", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-base:              1.125rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.618) !default;
+$font-size-sm:                ($font-size-base / 1.618) !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -232,15 +232,15 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base !default;
+$h2-font-size:                $font-size-base * 1.618 * 1.618 * 1.618  !default;
+$h3-font-size:                $font-size-base * 1.618 * 1.618 !default;
+$h4-font-size:                $font-size-base * 1.618 !default;
+$h5-font-size:                $font-size-base  !default;
+$h6-font-size:                $font-size-base / 1.618 !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        inherit !default;
+$headings-font-family:        "Junge","Georgia","Verdana",serif;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
@@ -256,7 +256,7 @@ $display3-weight:             300 !default;
 $display4-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-size:              ($font-size-base * 1.618) !default;
 $lead-font-weight:            300 !default;
 
 $small-font-size:             80% !default;
