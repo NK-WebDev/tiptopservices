@@ -28,7 +28,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" role="navigation">
             <a href="index.html" class="navbar-brand">
                 <h1 class="sr-only">Tip Top Services</h1>
                 <img src="img/tiptoplogo.png" alt="Logo of tiptop services">
@@ -74,131 +74,179 @@
         </div>
     </header>
 
-    <section id="services">
-        <h2 class="text-center my-5 pt-5">Our Services</h2>
-        <div class="container">
-            <div class="card-group">
-                <div class="card mb-5">
-                    <img src="img/carpet-cleaning.jpg" alt="carpet cleaning" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Carpet Cleaning</h3>
-                        <p>We will clean your carpets using the best carpet cleaning products available on the market. Say goodbye to your dirty rugs!</p>
+    <main role="main">
+        <section id="services" class="py-5">
+            <h2 class="text-center">Our Services</h2>
+            <div class="container mt-5">
+                <div class="card-group">
+                    <div class="card mb-5">
+                        <img src="img/carpet-cleaning.jpg" alt="carpet cleaning" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Carpet Cleaning</h3>
+                            <p>We will clean your carpets using the best carpet cleaning products available on the market. Say goodbye to your dirty rugs!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="services.html" class="btn btn-primary btn-block">Learn More</a>
+                        </div>
+                    </div> <!-- end card -->
+                    <div class="card mb-5">
+                        <img src="img/rat.jpg" alt="rat killing" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Pest Control</h3>
+                            <p>We will help you get rid of those pesky pests and we promise to only use non-toxic chemicals. You can trust us to kill your pests without comprimising your health</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="services.html" class="btn btn-primary btn-block">Learn More</a>
+                        </div>
+                    </div> <!-- edn card -->
+                    <div class="card mb-5">
+                        <img src="img/water-drops.jpg" alt="window washing" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Window Washing</h3>
+                            <p>We will bring back the sparkling shine to your windows. No dirty windows from now on.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="services.html" class="btn btn-primary btn-block">Learn More</a>
+                        </div>
+                    </div> <!-- end card -->
+                </div><!-- end card-group -->
+                <a href="services.html" id="other-services-btn" class="btn btn-primary">View our Other Services</a>
+            </div><!-- end container -->
+        </section>
+        <section id="cta-block-1" class="cta-block my-5 py-3 bg-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <p class="text-white mt-1">Think we can do your job?</p>
+                    </div><!-- end col -->
+                    <div class="col-sm-6 text-center ">
+                        <a href="#" class="btn btn-success">Schedule a Cleaning</a>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+        <section id="FAQ" class="p-5">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="container mt-5">
+                <div class="row my-4">
+                    <div class="col-md-6 text-center">
+                        <p class="lead">Q: What cleaning products do you use?</p>
+                        <p class="lead">A: We only use the best organic products.</p>
+                    </div><!-- end col -->
+                    <div class="col-md-6 text-center">
+                        <p class="lead">Q: Do you use safe chemicals for pest control??</p>
+                        <p class="lead">A: Yes, We only use 100% safe chemicals</p>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+                <div class="row my-4">
+                    <div class="col-md-6 text-center">
+                        <p class="lead">Q: Do you have a refund policy?</p>
+                        <p class="lead">A: No, We don't have a refund policy but we will gurentee you won't need it.</p>
+                    </div><!-- end col -->
+                    <div class="col-md-6 text-center">
+                        <p class="lead">Q: Why should I hire you?</p>
+                        <p class="lead">A: Because we are the best cleaning company in melbourne.</p>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+        <section id="testimonials" class="p-5 bg-info">
+            <h2 class="text-center text-white">What People are saying about us</h2>
+            <div class="container mt-5">
+                <div class="row my-2 py-3">
+                    <div class="col-md-4 text-center">
+                        <img src="img/ben.png" alt="pic of ben" class="img-fluid">
+                    </div><!-- end col -->
+                    <div class="col-md-8 text-white">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">“ Tiptop Services is a great solution if you want a dependable, affordabele and dedicated team of professionals to clean your home. Nothing but the best cleaning company in melbourne.”</p>
+                            <footer class="blockquote-footer text-white"><cite title="Source Title">Brendan Jones,</cite> Victoria, Melbourne</footer>
+                          </blockquote>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+                <div class="row my-2 py-3">
+                    <div class="col-md-4 text-center">
+                        <img src="img/aj.png" alt="pic of ben" class="img-fluid">
+                    </div><!-- end col -->
+                    <div class="col-md-8 text-white">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">“ If remember the days when when I wasted hours cleaning my house and it still looked bad but more, with tiptop services I newver have to deal with that again. ”</p>
+                            <footer class="blockquote-footer text-white"><cite title="Source Title">Mellisa Leo,</cite> Essex, Melbourne</footer>
+                          </blockquote>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+                <div class="row my-2 py-3">
+                    <div class="col-md-4 text-center">
+                        <img src="img/ernest.png" alt="pic of ben" class="img-fluid">
+                    </div><!-- end col -->
+                    <div class="col-md-8 text-white">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">“ Tiptop Services is fast,efficient and suprisingly affordable. ”</p>
+                            <footer class="blockquote-footer text-white"><cite title="Source Title">Toby Maguire,</cite> New South Wales, Melbourne</footer>
+                          </blockquote>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+        <section id="cta-block-2" class="cta-block py-3 bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <p class="text-white mt-1">Have you decided yet??</p>
+                    </div><!-- end col -->
+                    <div class="col-sm-4 text-center">
+                        <a href="#" class="btn btn-success">Schedule a Cleaning</a>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-primary bg-dark text-white p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About us</h3>
+                        <p>We are a melbourne based cleaning and pest control company that will take care of all of your cleaning or pest control needs using the latest technology and 100% safe chemicals. Our decated staff will not rest until you are completely satisfied.</p>
+                    </div><!-- end col -->
+                    <div class="col-md-4">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="services.html">Carpet Cleaning</a></li>
+                            <li><a href="services.html">Couch Cleaning</a></li>
+                            <li><a href="services.html">Tiles Cleaning</a></li>
+                            <li><a href="services.html">Pest Control</a></li>
+                            <li><a href="services.html">Window Washing</a></li>
+                            <li><a href="services.html">Flood Restoration</a></li>
+                        </ul>
+                    </div><!-- end col -->
+                    <div class="col-md-4">
+                        <h3>Follow us</h3>
+                        <a href="facebook.com"><i class="fa fa-facebook mr-2 mb-1"></i></a>
+                        <a href="twitter.com"><i class="fa fa-twitter mr-2 mb-1"></i></a>
+                        <a href="instagram.com"><i class="fa fa-instagram mr-2 mb-1"></i></a>
+                        <a href="pinterest.com"><i class="fa fa-pinterest mb-1 mr-2"></i></a>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- footer-primary -->
+        <div class="footer-secondary p-3 text-white">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-3">
+                        <small>2017 &copy; All rights Reserved</small>
                     </div>
-                    <div class="card-footer">
-                        <a href="services.html" class="btn btn-primary btn-block">Learn More</a>
+                    <div class="col-md-3">
+                        <small><a href="policy.html">Our Policy</a></small>
                     </div>
-                </div> <!-- end card -->
-                <div class="card mb-5">
-                    <img src="img/rat.jpg" alt="rat killing" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Pest Control</h3>
-                        <p>We will help you get rid of those pesky pests and we promise to only use non-toxic chemicals. You can trust us to kill your pests without comprimising your health</p>
+                    <div class="col-md-3">
+                        <small><a href="terms.html">Terms and conditions</a></small>
                     </div>
-                    <div class="card-footer">
-                        <a href="services.html" class="btn btn-primary btn-block">Learn More</a>
-                    </div>
-                </div> <!-- edn card -->
-                <div class="card mb-5">
-                    <img src="img/water-drops.jpg" alt="window washing" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Window Washing</h3>
-                        <p>We will bring back the sparkling shine to your windows. No dirty windows from now on.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="services.html" class="btn btn-primary btn-block">Learn More</a>
-                    </div>
-                </div> <!-- end card -->
-            </div><!-- end card-group -->
-            <a href="services.html" id="other-services-btn" class="btn btn-primary">View our Other Services</a>
-        </div><!-- end container -->
-    </section>
-    <section id="cta-block-1" class="cta-block my-5 py-3 bg-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 text-center">
-                    <p class="text-white mt-1">Think we can do your job?</p>
-                </div><!-- end col -->
-                <div class="col-sm-6 text-center ">
-                    <a href="#" class="btn btn-success">Schedule a Cleaning</a>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section>
-    <section id="FAQ" class="mt-5 py-5">
-        <h2 class="text-center">Frequently Asked Questions</h2>
-        <div class="container mt-5">
-            <div class="row my-4">
-                <div class="col-md-6 text-center">
-                    <p>Q: What cleaning products do you use?</p>
-                    <p>A: We only use the best organic products.</p>
-                </div><!-- end col -->
-                <div class="col-md-6 text-center">
-                    <p>Q: What cleaning products do you use?</p>
-                    <p>A: We only use the best organic products.</p>
-                </div><!-- end col -->
-            </div><!-- end row -->
-            <div class="row my-4">
-                <div class="col-md-6 text-center">
-                    <p>Q: What cleaning products do you use?</p>
-                    <p>A: We only use the best organic products.</p>
-                </div><!-- end col -->
-                <div class="col-md-6 text-center">
-                    <p>Q: What cleaning products do you use?</p>
-                    <p>A: We only use the best organic products.</p>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section>
-    <section id="testimonials" class="mt-5 py-5 px-5 bg-info">
-        <h2 class="text-center text-white">What People are saying about us</h2>
-        <div class="container">
-            <div class="row my-2 py-3">
-                <div class="col-md-4 text-center">
-                    <img src="img/ben.png" alt="pic of ben" class="img-fluid">
-                </div><!-- end col -->
-                <div class="col-md-8 text-white">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">“ Tiptop Services is a great solution if you want a dependable, affordabele and dedicated team of professionals to clean your home. Nothing but the best cleaning company in melbourne.”</p>
-                        <footer class="blockquote-footer text-white"><cite title="Source Title">Brendan Jones,</cite> Victoria, Melbourne</footer>
-                      </blockquote>
-                </div><!-- end col -->
-            </div><!-- end row -->
-            <div class="row my-2 py-3">
-                <div class="col-md-4 text-center">
-                    <img src="img/aj.png" alt="pic of ben" class="img-fluid">
-                </div><!-- end col -->
-                <div class="col-md-8 text-white">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">“ Tiptop Services is a great solution if you want a dependable, affordabele and dedicated team of professionals to clean your home. Nothing but the best cleaning company in melbourne.”</p>
-                        <footer class="blockquote-footer text-white"><cite title="Source Title">Brendan Jones,</cite> Victoria, Melbourne</footer>
-                      </blockquote>
-                </div><!-- end col -->
-            </div><!-- end row -->
-            <div class="row my-2 py-3">
-                <div class="col-md-4 text-center">
-                    <img src="img/ernest.png" alt="pic of ben" class="img-fluid">
-                </div><!-- end col -->
-                <div class="col-md-8 text-white">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">“ Tiptop Services is a great solution if you want a dependable, affordabele and dedicated team of professionals to clean your home. Nothing but the best cleaning company in melbourne.”</p>
-                        <footer class="blockquote-footer text-white"><cite title="Source Title">Brendan Jones,</cite> Victoria, Melbourne</footer>
-                      </blockquote>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section>
-    <section id="cta-block-2" class="cta-block py-3 bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 text-center">
-                    <p class="text-white mt-1">Have you decided yet??</p>
-                </div><!-- end col -->
-                <div class="col-sm-4 text-center">
-                    <a href="#" class="btn btn-success">Schedule a Cleaning</a>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section>
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-secondary -->
+    </footer>
 </body>
 
 </html>
