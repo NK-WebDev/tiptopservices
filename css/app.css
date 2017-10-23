@@ -7939,6 +7939,12 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
+@media screen and (max-width: 350px) {
+  nav.navbar button small {
+    display: none;
+  }
+}
+
 .banner {
   background: url(../img/banner-image.jpg) no-repeat center center;
   background-attachment: fixed;
@@ -7988,6 +7994,16 @@ a.text-dark:focus, a.text-dark:hover {
 
 #footer .footer-secondary {
   background: #1f1f1f;
+}
+
+#about-us {
+  margin-top: 105px;
+}
+
+@media screen and (max-width: 600px) {
+  #about-us p.lead {
+    font-size: 1rem;
+  }
 }
 
 /*************************************************/
