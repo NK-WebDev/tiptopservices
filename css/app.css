@@ -8006,6 +8006,16 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #FAQ p.lead {
+    font-size: 1rem;
+  }
+}
+
+#pricing-policy {
+  margin-top: 105px;
+}
+
 /*************************************************/
 /**************** Modules Styles *******************/
 #other-services-btn {
