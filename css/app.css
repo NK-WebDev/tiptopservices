@@ -7953,7 +7953,6 @@ a.text-dark:focus, a.text-dark:hover {
   background-size: cover;
   height: 500px;
   width: 100%;
-  margin-top: 105px;
 }
 
 .banner .banner-text {
@@ -7996,10 +7995,6 @@ a.text-dark:focus, a.text-dark:hover {
   background: #1f1f1f;
 }
 
-#about-us {
-  margin-top: 105px;
-}
-
 @media screen and (max-width: 600px) {
   #about-us p.lead {
     font-size: 1rem;
@@ -8012,8 +8007,8 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
-#pricing-policy {
-  margin-top: 105px;
+main {
+  margin-top: 110px;
 }
 
 /*************************************************/
@@ -8026,6 +8021,18 @@ a.text-dark:focus, a.text-dark:hover {
 
 .btn.btn-success {
   color: #FAFAFE !important;
+}
+
+.post .post-title {
+  font-size: 2.61792rem;
+}
+
+.post .post-meta span.date {
+  color: #5ADB4F;
+}
+
+.post .post-meta span.comment-number {
+  color: #0C8DD3;
 }
  
 
