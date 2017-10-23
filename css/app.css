@@ -446,19 +446,19 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 4.2358rem;
-}
-
-h3, .h3 {
   font-size: 2.61792rem;
 }
 
-h4, .h4 {
+h3, .h3 {
   font-size: 1.618rem;
 }
 
-h5, .h5 {
+h4, .h4 {
   font-size: 1rem;
+}
+
+h5, .h5 {
+  font-size: 0.61805rem;
 }
 
 h6, .h6 {
